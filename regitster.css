@@ -1,0 +1,170 @@
+html,body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+.background-container
+{
+    background-image: url(asset/img/ump-1.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container
+{
+    background-color: white;
+    width: 400px;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.title-container
+{
+    
+    display: flex;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-ump
+{
+    margin-bottom: 0;
+}
+
+.logo-ump
+{
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.title-pendaftaran
+{
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+.field-container
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.name-container
+{
+    width: 85%;
+}
+
+.nama
+{
+    margin-bottom: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.input-nama
+{
+    width: 97%;
+    height: 2em;
+}
+
+.username-container
+{
+
+    width: 85%;
+}
+
+.username
+{
+    margin-bottom: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.input-username
+{
+    width: 97%;
+    height: 2em;
+}
+
+.password-container
+{
+    width: 85%;
+}
+
+.password
+{
+    margin-bottom: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.input-password
+{
+    width: 97%;
+    height: 2em;
+}
+
+.register-button-container
+{
+    width: 85%;
+    margin-top: 25px;
+}
+
+.button-register
+{
+    width: 100%;
+    height: 35px;
+    background-color: #175ffc;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.footer-container
+{
+    width: 85%;
+    margin-top: 20px;
+}
+
+.text-footer
+{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    font-size: 0.9em;
+    color: blue;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+    .register-container
+    {
+        width: 330px;
+    }
+}
+  

@@ -1,0 +1,293 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+.background-container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(asset/img/gd_1_.png);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container
+{
+    background-color: white;
+    width: 400px;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.title-container
+{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.title-ump
+{
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.logo-ump
+{
+    width: 25%;
+    margin-top: 2em;
+    margin-bottom: 20px;
+}
+
+.title-halaman-login
+{
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.field-container
+{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nim-container
+{
+    margin-top: 1em;
+    width: 75%;
+}
+
+.password-container
+{
+    margin-top: 3em;
+    width: 75%;
+}
+
+.group {
+    position: relative;
+    width: 100%;
+   }
+   
+   .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: #999;
+    font-size: 0.8em;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #175ffc;
+    ;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+.button-container
+{
+    margin-top: 3em;
+    width: 75%;
+}
+
+button {
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #175ffc;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #175ffc;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #175ffc;
+    z-index: -1;
+  }
+  
+  button:hover, button:focus {
+    color: white;
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+.footer-container
+{
+     width: 75%;
+     margin-top: 3em;
+     font-size: 0.9em;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+@media screen and (max-width: 767px)
+{
+    .background-container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+    .login-container
+    {
+        width: 300px;
+        height: 80vh;
+        margin-top: 2em;
+    }
+
+    .title-ump
+    {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .logo-ump
+    {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    .title-halaman-login
+    {
+        margin-top: 1em;
+    }
+
+    .nim-container
+    {
+        margin-top: 0;
+    }
+
+    .password-container
+    {
+        margin-top: 2.5em;
+    }
+    
+    .button-container
+    {
+        margin-top: 2em;
+    }
+
+    .footer-container
+    {
+        margin-top: 2em;
+        font-size: 0.7em;
+    }
+    
+}
